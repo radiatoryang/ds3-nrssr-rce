@@ -186,7 +186,8 @@ TEST      RBX,RBX
 ; Never jumps as RBX == RDX == data buffer addr, nonzero. 
 JZ        LAB_140e40f62 
 
-; We have our now fully control this RWE memory region due to the memcpy at 144786150. RCE has been achieved!
+; We have our now fully control this RWE memory region due to the memcpy at 144786150.
+; RCE has been achieved!
 MOV       RCX,qword ptr [DAT_144786998]
 MOV       RDX,RBX
 MOV       RAX,qword ptr [RCX]
